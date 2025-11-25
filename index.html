@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cviz studio — 3D Visualization Studio</title>
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="#">
+      <img src="logo.png" alt="Cviz Studio logo" />
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#services">SERVICES</a>
+        <a href="#blog">BLOG</a>
+        <a href="#career">CAREER</a>
+      </nav>
+
+      <div class="header-cta">
+	<a class="btn btn-primary" href="#quote">GET A QUOTE</a>
+        <a class="btn btn-outline" href="#quote">OUTSOURCE WITH US</a>
+        
+
+        <!-- Mobile toggle -->
+        <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+<!-- HERO SLIDER SECTION -->
+
+<section id="hero-slider">
+<div class="hero-buttons-fixed">
+    <a class="btn btn-hero-primary" href="#quote">DISCUSS YOUR PROJECT</a>
+    <a class="btn btn-hero-light" href="#quote">BOOK FREE CONSULTATION</a>
+  </div>
+<div class="slider">
+
+    <!-- Slide 1 -->
+    <div class="slide active">
+      <img src="hero1.jpg" alt="Render 1">
+      <div class="slide-content">
+        <h2>Modern Interior Rendering</h2>
+        <p>High-quality photorealistic visuals for your design.</p>
+
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide">
+      <img src="hero2.jpg" alt="Render 2">
+      <div class="slide-content">
+        <h2>Exterior Visualization</h2>
+        <p>Bring architecture to life with precise lighting.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide">
+      <img src="hero3.jpg" alt="Render 3">
+      <div class="slide-content">
+        <h2>3D Floor Plans</h2>
+        <p>Clean, realistic layouts for your clients.</p>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide">
+      <img src="hero4.jpg" alt="Render 4">
+      <div class="slide-content">
+        <h2>Virtual Staging</h2>
+        <p>Perfect for real estate presentations.</p>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide">
+      <img src="hero5.jpg" alt="Render 5">
+      <div class="slide-content">
+        <h2>Architectural Animation</h2>
+        <p>Show motion, mood, and storytelling.</p>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide">
+      <img src="hero6.jpg" alt="Render 6">
+      <div class="slide-content">
+        <h2>Product Visualization</h2>
+        <p>Perfect for marketing realistic 3D objects.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<script>
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('active');
+  });
+  slides[index].classList.add('active');
+}
+
+// Auto slide every 5 seconds
+setInterval(() => {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}, 5000);
+</script>
+
+
+ <!-- Image -->
+<div class="portfolio-grid">
+<a class="pf-item" href="project1.html">
+    <img src="pf4.jpg" alt="Project 1">
+    <div class="pf-caption">
+      <h2>Exterior Redering</h2>
+      <p>Deliver stunning 3D Exterior Rendering that sells fast</p>
+      <button class="see-more-btn">See More</button>
+    </div>
+  </a>
+
+  <a class="pf-item" href="project2.html">
+    <img src="pf5.jpg" alt="Project 2">
+    <div class="pf-caption">
+       <h2>3D Interior Rendering</h2>
+      <p>High-quality 3d interior rendering that wins hearts</p>
+      <button class="see-more-btn">See More</button>
+    </div>
+  </a>
+
+  <a class="pf-item" href="project3.html">
+    <img src="pf6.jpg" alt="Project 3">
+    <div class="pf-caption">
+    <h2>3D CG Animation</h2>
+      <p>Impactful CG animations that tell stories powerfully</p>
+
+      <button class="see-more-btn">See More</button>
+    </div>
+  </a>
+
+</div>
+
+
+<!-- Second row -->
+<div class="portfolio-grid">
+
+  <a class="pf-item" href="project5.html">
+    <img src="pf1.jpg" alt="Project 1">
+    <div class="pf-caption">
+       <h2>3D Virtual Tours</h2>
+      <p>Immersive 3D virtual tours that seal the deal.</p>
+      <button class="see-more-btn">See More</button>
+    </div>
+  </a>
+
+  <a class="pf-item" href="project6.html">
+    <img src="pf2.jpg" alt="Project 2">
+    <div class="pf-caption">
+           <h2>3D Floor Plan</h2>
+      <p>Affordable 3D floor plans for perfect project clarity </p>
+      <button class="see-more-btn">See More</button>
+    </div>
+  </a>
+
+  <a class="pf-item" href="project7.html">
+    <img src="pf3.jpg" alt="Project 3">
+    <div class="pf-caption">
+          <h2>3D Photomontage Rendering</h2>
+      <p>Deliver stunning Exterior 3D Rendering that sells fast</p>
+      <button class="see-more-btn">See More</button>
+    </div>
+  </a>
+
+</div>
+      <div class="center">
+         <a class="btn btn-outline" href="#">View Full Gallery</a>
+      </div>
+    </div>
+  </div>
+<!-- Why choose us -->
+  <section id="about" class="why">
+    <div class="inner">
+      <h2 class="section-title">Why Choose Cviz studio</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>Photoreal Quality</h3>
+          <p>Real materials, accurate lighting and high-res outputs for marketing & presentation.</p>
+        </div>
+        <div class="why-card">
+          <h3>Fast Turnaround</h3>
+          <p>Optimized pipelines and clear revisions for quick delivery.</p>
+        </div>
+        <div class="why-card">
+          <h3>Architectural Expertise</h3>
+          <p>We speak plans, specs and material finishes — so the result is production-ready.</p>
+        </div>
+        <div class="why-card">
+          <h3>Flexible Pricing</h3>
+          <p>Project-based, hourly or retainer packages for studios and agencies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="inner">
+      <h2 class="section-title">Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>3D Interior Rendering</h3>
+          <p>Realistic interiors with material breakdown and furniture placement.</p>
+        </div>
+        <div class="service-card">
+          <h3>3D Exterior Rendering</h3>
+          <p>Sun studies, landscaping and contextual scenes for marketing visuals.</p>
+        </div>
+        <div class="service-card">
+          <h3>360° Virtual Tours</h3>
+          <p>Interactive panoramas for immersive client walkthroughs.</p>
+        </div>
+        <div class="service-card">
+          <h3>3D Animation</h3>
+          <p>High-quality flythroughs and product animations for promos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process">
+    <div class="inner">
+      <h2 class="section-title">Our Process</h2>
+      <ol class="process-list">
+        <li><strong>Send files</strong> — Plans, refs and brief</li>
+        <li><strong>We model & light</strong> — First draft for review</li>
+        <li><strong>Revise & approve</strong> — Two free rounds</li>
+        <li><strong>Final delivery</strong> — High-res assets & sources</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="quote" class="cta-quote">
+    <div class="inner">
+      <h2>Ready to start? Get a tailored quote</h2>
+      <p>Tell us about your project and we’ll respond in 24–48 hours.</p>
+      <a class="btn btn-primary" href="quote.html">Get a Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="inner footer-grid">
+      <div>
+        <a class="logo small" href="#"><img src="logo.png" alt="MR Rendering"></a>
+        <p>Full-service 3D visualization studio. High quality renderings, animations, and virtual tours.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer-nav">
+          <a href="#portfolio">Portfolio</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>email@domain.com<br/>+84 123 456 789</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="year"></span> Cviz studio — All rights reserved
+    </div>
+  </footer>
+
+  <script>
+    // mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    navToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
